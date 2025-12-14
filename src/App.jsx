@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import TableOfContents from './components/TableOfContents.jsx';
+import ContentDetails from './components/ContentDetails.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,7 @@ function App() {
           space
         </div>
         <div class="col-md-7">
-          section details
+          <ContentDetails />
         </div>
       </div>
     </div>

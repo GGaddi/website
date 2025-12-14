@@ -6,6 +6,7 @@ function ContentDetails() {
 
   return (
     <div>
+      allow changing of content here
     </div>
   )
 }
