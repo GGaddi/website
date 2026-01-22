@@ -11,13 +11,17 @@ function App() {
     <div class="container-fluid">
       <div class="row align-items-start">
         <div class="col-md-3">
-          <TableOfContents />
+          <TableOfContents
+            selectContent={setSelectedContent}
+          />
         </div>
         <div class="col-md-2">
           space
         </div>
         <div class="col-md-7">
-          <ContentDetails />
+          <ContentDetails
+            selectedContent={selectedContent}
+          />
         </div>
       </div>
     </div>
