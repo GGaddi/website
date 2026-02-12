@@ -1,12 +1,22 @@
 import { useState } from 'react';
+import profilePic from '../../assets/profilePic.jpg'
 import './SelfSummary.css';
 
 function SelfSummary() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      Self Summary
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <img src={profilePic} alt="profile" height="384" width="216" />
+              <p class="lead">I am a passionate software developer with a Bachelor's Degree in Computer Science from the University of California, San Diego. I've collaborated with different teammates to develop extravagant applications and websites, working on both front-end and back-end development.
+              <br />
+              As a software developer, I want to make programs 
+              exciting and fun to use. My goal is to develop software that is 
+              beneficial, but also engaging and exciting.</p>
+          </div>
+      </div>
     </div>
   )
 }

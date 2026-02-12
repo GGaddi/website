@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div class="container-fluid">
-      <div class="row align-items-start">
+      <div class="row fullRow align-items-start">
         <div class="col-md-3">
           <TableOfContents
             selectContent={setSelectedContent}
