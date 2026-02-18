@@ -5,8 +5,12 @@ function Hobbies() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      Hobbies
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-left">
+            <p>Hobbies</p>
+          </div>
+      </div>
     </div>
   )
 }
