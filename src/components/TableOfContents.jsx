@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import './TableOfContents.css';
 
 function TableOfContents({selectContent}) {
@@ -6,10 +7,10 @@ function TableOfContents({selectContent}) {
   const [aboutMeDropdown, setAboutMeDropdown] = useState(false);
 
   return (
-    <div class="sidebar">
+    <div class="sidebar menu">
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
         <li>
-          <button class="btn" onClick= {() => setAboutMeDropdown(!aboutMeDropdown)}>About Me</button>
+          <button class="btn" onClick= {() => setAboutMeDropdown(!aboutMeDropdown)}>About Me <span>{aboutMeDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
           <div>
             { aboutMeDropdown ? 
               <ul class="collapse show nav flex-column ms-1" id="submenu1">

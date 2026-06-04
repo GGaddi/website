@@ -1,5 +1,19 @@
+@font-face {
+    font-family: khGummi;
+    src: url(../assets/fonts/KHGummi.otf);
+    
+}
+
 .sidebar {
     height: 100vh;
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+.menu {
+    font-family: khGummi;
+}
+
+#submenu1 {
+    
 }
