@@ -33,10 +33,11 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 .fullRow {
   min-width: 100vw;
+}
+
+#content-container {
+  background-color: rgba(150,150,150,0.2);
+  border-radius: 25px;
 }

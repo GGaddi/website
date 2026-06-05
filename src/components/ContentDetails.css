@@ -1,0 +1,8 @@
+@font-face {
+    font-family: ComicHearts;
+    src: url(../assets/fonts/ComicHearts.otf);
+}
+
+.content-details {
+    font-family: ComicHearts;
+}

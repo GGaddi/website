@@ -16,9 +16,9 @@ function App() {
           />
         </div>
         <div class="col-md-2">
-          space
+        {/* empty space between content and menu. Need to remove under mobile */}
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7" id="content-container">
           <ContentDetails
             selectedContent={selectedContent}
           />
