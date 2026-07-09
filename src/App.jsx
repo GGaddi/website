@@ -15,10 +15,10 @@ function App() {
             selectContent={setSelectedContent}
           />
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
         {/* empty space between content and menu. Need to remove under mobile */}
         </div>
-        <div class="col-md-7" id="content-container">
+        <div class="col-md-8" id="content-container">
           <ContentDetails
             selectedContent={selectedContent}
           />
