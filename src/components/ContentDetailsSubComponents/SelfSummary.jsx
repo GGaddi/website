@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import profilePic from '../../assets/profilePic.jpg'
+import profilePic from '../../assets/profilepic.jpg'
 import './SelfSummary.css';
 
 function SelfSummary() {
