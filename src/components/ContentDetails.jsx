@@ -9,7 +9,7 @@ function ContentDetails({selectedContent}) {
   const [count, setCount] = useState(0)
 
   return (
-    <div class="content-details">
+    <div class="content-details" style={{padding: selectedContent === "" ? "" : "2rem"}}>
       { selectedContent === "contactInformation" && <ContactInformation />}
       { selectedContent === "hobbies" && <Hobbies />}
       { selectedContent === "selfSummary" && <SelfSummary />}
