@@ -1,0 +1,11 @@
+@font-face {
+    font-family: khGummi;
+    src: url(../assets/fonts/KHGummi.otf);
+    
+}
+
+.name {
+    font-family: khGummi;
+    font-size: 50px;
+    padding: 1rem;
+}

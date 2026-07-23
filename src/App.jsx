@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import NameTag from './components/NameTag.jsx';
 import TableOfContents from './components/TableOfContents.jsx';
 import ContentDetails from './components/ContentDetails.jsx';
 
@@ -11,6 +12,8 @@ function App() {
     <div class="container-fluid">
       <div class="row fullRow align-items-start">
         <div class="col-md-3">
+          <NameTag
+          />
           <TableOfContents
             selectContent={setSelectedContent}
           />

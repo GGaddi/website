@@ -7,7 +7,7 @@ function TableOfContents({selectContent}) {
   const [aboutMeDropdown, setAboutMeDropdown] = useState(false);
 
   return (
-    <div class="sidebar menu">
+    <div class="row sidebar menu">
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
         <li>
           <button class="btn" onClick= {() => setAboutMeDropdown(!aboutMeDropdown)}>About Me <span>{aboutMeDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
