@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Resume from '../../assets/Gabriel Gaddi Resume.pdf';
+import Resume from '../../assets/Gabriel Gaddi Software Engineer Resume.pdf';
 import './ContactInformation.css';
 
 function ContactInformation() {
