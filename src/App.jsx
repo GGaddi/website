@@ -9,7 +9,7 @@ function App() {
   const [selectedContent, setSelectedContent] = useState("");
 
   return (
-    <div class="container-fluid">
+    <div class="container-fluid background">
       <div class="row fullRow align-items-start">
         <div class="col-md-3">
           <NameTag

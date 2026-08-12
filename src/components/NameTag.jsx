@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './NameTag.css';
+import cardCosplayRotate from '../assets/CardRotateSoraCosplay.gif';
+// import cardCosplayRotate from '../assets/0060.png';
 
 function NameTag() {
   const [count, setCount] = useState(0)
@@ -9,6 +11,7 @@ function NameTag() {
       <div class="row">
         Gabriel Gaddi
       </div>
+      <img src={cardCosplayRotate}  width="300"/>
     </div>
   )
 }

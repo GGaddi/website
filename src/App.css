@@ -1,6 +1,9 @@
 #root {
 }
 
+/* .background {
+  background-image: url('./assets/background.gif');
+} */
 .logo {
   height: 6em;
   padding: 1.5em;
