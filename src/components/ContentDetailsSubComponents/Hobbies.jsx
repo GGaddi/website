@@ -13,8 +13,8 @@ function Hobbies() {
               I like to stream on twitch when I can when playing and even do a few speedruns when I have the time. I also cosplay both from video games and anime such as cosplaying Sora from Kingdom Hearts
               and Tanjiro from Demon Slayer. If you would like to see my socials for my video game streaming or recordings, feel free to check my links out!
             </p>
-            <p><a href="https://twitch.tv/brixgale" target="_blank">Twitch</a></p>
-            <p><a href="https://youtube.com/@brixgale" target="_blank">Youtube</a></p>
+            <p><a href="https://twitch.tv/brixgale" target="_blank"><i class="fa-brands fa-twitch fa-fw fa-2x"></i>Twitch</a></p>
+            <p><a href="https://youtube.com/@brixgale" target="_blank"><i class="fa-brands fa-youtube fa-fw fa-2x"></i>Youtube</a></p>
           </div>
       </div>
     </div>
