@@ -28,9 +28,6 @@ function TableOfContents({selectContent}) {
             { projectsDropdown ? 
               <ul class="collapse show nav flex-column ms-1" id="submenu1">
                 <li><button class="btn" onClick= {() => selectContent("dropTetris")}>Drop: Tetris Clone</button></li>
-                <li><button class="btn" onClick= {() => selectContent("quisine")}>Quisine</button></li>
-                <li><button class="btn" onClick= {() => selectContent("timeyQuest")}>Timey Quest: The Productivity RPG</button></li>
-                <li><button class="btn" onClick= {() => selectContent("soloSD")}>soloSD</button></li>
               </ul> : null
             }
           </div>
