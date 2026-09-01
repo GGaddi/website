@@ -9,7 +9,7 @@ function ContactInformation() {
     <div class="container">
       <div class="row">
           <div class="col-lg-12 text-left">
-            <h1>Contact Information and Socials</h1>
+            <h1>Contact and Socials</h1>
             <p>
               Feel free to contact me at my email, phone number, or through any of the social links provided.
             </p>

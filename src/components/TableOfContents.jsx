@@ -5,6 +5,7 @@ import './TableOfContents.css';
 function TableOfContents({selectContent}) {
   const [count, setCount] = useState(0)
   const [aboutMeDropdown, setAboutMeDropdown] = useState(false);
+  const [projectsDropdown, setProjects] = useState(false);
 
   return (
     <div class="row sidebar menu">
@@ -21,7 +22,17 @@ function TableOfContents({selectContent}) {
             }
           </div>
         </li>
-        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>Contact Information and Socials</button></li>
+        <li>
+          <button class="btn" onClick= {() => setProjects(!projectsDropdown)}>Projects <span>{projectsDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
+          <div>
+            { projectsDropdown ? 
+              <ul class="collapse show nav flex-column ms-1" id="submenu1">
+                <li><button class="btn" onClick= {() => selectContent("dropTetris")}>Drop: Tetris Clone</button></li>
+              </ul> : null
+            }
+          </div>
+        </li>
+        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>Contact and Socials</button></li>
       </ul>
         {/* <table>
             <td>

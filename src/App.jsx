@@ -9,7 +9,7 @@ function App() {
   const [selectedContent, setSelectedContent] = useState("");
 
   return (
-    <div class="container-fluid background">
+    <div class="container-fluid background min-vh-100">
       <div class="row fullRow align-items-start">
         <div class="col-md-3">
           <NameTag
@@ -18,10 +18,10 @@ function App() {
             selectContent={setSelectedContent}
           />
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-0">
         {/* empty space between content and menu. Need to remove under mobile */}
         </div>
-        <div class="col-md-8" id="content-container">
+        <div class="col-md-8 col-sm-9" id="content-container">
           <ContentDetails
             selectedContent={selectedContent}
           />

@@ -4,6 +4,7 @@ import ContactInformation from './ContentDetailsSubComponents/ContactInformation
 import Hobbies from './ContentDetailsSubComponents/Hobbies.jsx';
 import SelfSummary from './ContentDetailsSubComponents/SelfSummary.jsx';
 import WorkExperience from './ContentDetailsSubComponents/WorkExperience.jsx'
+import DropTetris from './ContentDetailsSubComponents/DropTetris.jsx';
 
 function ContentDetails({selectedContent}) {
   const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function ContentDetails({selectedContent}) {
       { selectedContent === "hobbies" && <Hobbies />}
       { selectedContent === "selfSummary" && <SelfSummary />}
       { selectedContent === "workExperience" && <WorkExperience />}
-
+      { selectedContent === "dropTetris" && <DropTetris />}
     </div>
   )
 }
