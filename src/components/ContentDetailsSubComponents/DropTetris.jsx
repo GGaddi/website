@@ -7,7 +7,9 @@ function DropTetris() {
   return (
     <div class="container">
       <div class="row">
-        Drop Tetris
+          <div class="col-lg-12 text-left">
+              <h1>Drop Tetris</h1>
+          </div>
       </div>
     </div>
   )

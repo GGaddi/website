@@ -35,7 +35,7 @@ function TableOfContents({selectContent}) {
             }
           </div>
         </li>
-        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>Contact Information and Socials</button></li>
+        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>Contact and Socials</button></li>
       </ul>
         {/* <table>
             <td>
