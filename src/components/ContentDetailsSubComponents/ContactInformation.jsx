@@ -11,7 +11,7 @@ function ContactInformation() {
           <div class="col-lg-12 text-left">
             <h1>Contact Information and Socials</h1>
             <p>
-              Feel free to contact me at my email, phone number, or any other of the social links provided.
+              Feel free to contact me at my email, phone number, or through any of the social links provided.
             </p>
             <p><a href="tel:+15598240194"><i class="fa-solid fa-phone fa-fw fa-2x"></i>(559) 824-0194</a></p>
             <p><a href="mailto:gabriel.gaddi93@gmail.com"><i class="fa-solid fa-envelope fa-fw fa-2x"></i>gabriel.gaddi93@gmail.com</a></p>
