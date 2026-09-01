@@ -1,5 +1,15 @@
-.screenshot {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+@media (min-width:901px) {
+    .screenshot {
+        max-width: 50%;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .screenshot {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
 }
