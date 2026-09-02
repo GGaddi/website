@@ -1,6 +1,6 @@
 @font-face {
-    font-family: khGummi;
-    src: url(../assets/fonts/KHGummi.otf);
+    font-family: khMenu;
+    src: url(../assets/fonts/KHMenu.otf);
     
 }
 
@@ -9,7 +9,7 @@
 }
 
 .menu {
-    font-family: khGummi;
+    font-family: khMenu;
 }
 
 #submenu1 {

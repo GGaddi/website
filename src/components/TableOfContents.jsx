@@ -11,28 +11,28 @@ function TableOfContents({selectContent}) {
     <div class="row sidebar menu">
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
         <li>
-          <button class="btn" onClick= {() => setAboutMeDropdown(!aboutMeDropdown)}>About Me <span>{aboutMeDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
+          <button class="btn" onClick= {() => setAboutMeDropdown(!aboutMeDropdown)}>ABOUT ME <span>{aboutMeDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
           <div>
             { aboutMeDropdown ? 
               <ul class="collapse show nav flex-column ms-1" id="submenu1">
-                <li><button class="btn" onClick= {() => selectContent("selfSummary")}>Self Summary</button></li>
-                <li><button class="btn" onClick= {() => selectContent("workExperience")}>Work Experience</button></li>
-                <li><button class="btn" onClick= {() => selectContent("hobbies")}>Hobbies</button></li>
+                <li><button class="btn" onClick= {() => selectContent("selfSummary")}>SELF SUMMARY</button></li>
+                <li><button class="btn" onClick= {() => selectContent("workExperience")}>WORK EXPERIENCE</button></li>
+                <li><button class="btn" onClick= {() => selectContent("hobbies")}>HOBBIES</button></li>
               </ul> : null
             }
           </div>
         </li>
         <li>
-          <button class="btn" onClick= {() => setProjects(!projectsDropdown)}>Projects <span>{projectsDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
+          <button class="btn" onClick= {() => setProjects(!projectsDropdown)}>PROJECTS <span>{projectsDropdown ? <FaChevronUp /> : <FaChevronDown />}</span></button>
           <div>
             { projectsDropdown ? 
               <ul class="collapse show nav flex-column ms-1" id="submenu1">
-                <li><button class="btn" onClick= {() => selectContent("dropTetris")}>Drop: Tetris Clone</button></li>
+                <li><button class="btn" onClick= {() => selectContent("dropTetris")}>DROP: TETRIS CLONE</button></li>
               </ul> : null
             }
           </div>
         </li>
-        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>Contact and Socials</button></li>
+        <li><button class="btn" onClick= {() => selectContent("contactInformation")}>CONTACT AND SOCIALS</button></li>
       </ul>
         {/* <table>
             <td>
