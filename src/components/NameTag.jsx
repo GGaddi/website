@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './NameTag.css';
-import cardCosplayRotate from '../assets/CardRotateSoraCosplay.gif';
+import cardRotateMulti from '../assets/CardRotateMulti.gif';
 // import cardCosplayRotate from '../assets/0060.png';
 
 function NameTag() {
@@ -11,7 +11,7 @@ function NameTag() {
       <div class="row">
         Gabriel Gaddi
       </div>
-      <img src={cardCosplayRotate}  width="300"/>
+      <img src={cardRotateMulti}  width="300"/>
     </div>
   )
 }
