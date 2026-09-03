@@ -15,3 +15,29 @@
 #submenu1 {
     
 }
+.btn {
+  position: relative;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+  padding-right: 150px;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        padding-right:10px;
+    }
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #2279d1, #5191c9, #8fc7e8, #fff);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s ease;
+}
+.btn:hover { color: #fff; }
+.btn:hover::before { transform: scaleX(1); }
