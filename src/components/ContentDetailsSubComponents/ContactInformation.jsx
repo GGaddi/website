@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Resume from '../../assets/Gabriel Gaddi Software Engineer Resume.pdf';
 import './ContactInformation.css';
 

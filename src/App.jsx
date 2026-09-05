@@ -7,6 +7,7 @@ import ContentDetails from './components/ContentDetails.jsx';
 function App() {
   const [count, setCount] = useState(0);
   const [selectedContent, setSelectedContent] = useState("");
+  const [showContent, setShowContent] = useState(false);
 
   return (
     <div class="container-fluid background min-vh-100">
@@ -15,6 +16,7 @@ function App() {
           <NameTag
           />
           <TableOfContents
+            showContent={setShowContent}
             selectContent={setSelectedContent}
           />
         </div>
@@ -23,6 +25,7 @@ function App() {
         </div>
         <div class="col-md-8 col-sm-9" id="content-container">
           <ContentDetails
+            show={showContent}
             selectedContent={selectedContent}
           />
         </div>
