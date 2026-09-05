@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import './SelfSummary.css';
 
-function SelfSummary() {
+function SelfSummary({fadeInClass}) {
   const [count, setCount] = useState(0)
 
   return (
-    <div class="container animate-content-fade-in">
+    <div
+      class="container"
+      className={fadeInClass}
+    >
       <div class="row">
           <div class="col-lg-12 text-left">
             <h1>Work Summary</h1>

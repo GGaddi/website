@@ -2,11 +2,14 @@ import { useState } from 'react';
 import projectScreenshot from '../../assets/projectScreenshots/DropTetris/DropScreenshotFourLine.png'
 import './DropTetris.css';
 
-function DropTetris() {
+function DropTetris({fadeInClass}) {
   const [count, setCount] = useState(0)
 
   return (
-    <div class="container animate-content-fade-in">
+    <div
+      class="container"
+      className={fadeInClass}
+    >
       <div class="row">
           <div class="col-lg-12 text-left">
               <h1>Drop: Tetris Clone</h1>

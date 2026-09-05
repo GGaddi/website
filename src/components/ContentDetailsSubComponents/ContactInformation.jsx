@@ -2,24 +2,12 @@ import { useEffect, useState } from 'react';
 import Resume from '../../assets/Gabriel Gaddi Software Engineer Resume.pdf';
 import './ContactInformation.css';
 
-function ContactInformation() {
+function ContactInformation({fadeInClass}) {
   const [count, setCount] = useState(0)
-  // const [shouldRender, setShouldRender] = useState(show);
-  
-  // useEffect(() => {
-  //   if (show) setShouldRender(true);
-  // }, [show]);
-
-  // const onAnimationEnd = () => {
-  //   if (!show) setShouldRender(false);
-  // }
-
-  // if (!shouldRender) return null;
-
   return (
     <div
-      class="container animate-content-fade-in"
-      // className={show ? "animate-content-fade-in" : "animate-content-fade-out"}
+      class="container"
+      className={fadeInClass}
     >
       <div class="row">
           <div class="col-lg-12 text-left">

@@ -8,14 +8,15 @@ import DropTetris from './ContentDetailsSubComponents/DropTetris.jsx';
 
 function ContentDetails({selectedContent}) {
   const [count, setCount] = useState(0)
+  const [fadeInClass, setFadeInClass] = useState('animate-content-fade-in');
 
   return (
     <div class="content-details">
-      { selectedContent === "contactInformation" && <ContactInformation />}
-      { selectedContent === "hobbies" && <Hobbies />}
-      { selectedContent === "selfSummary" && <SelfSummary />}
-      { selectedContent === "workExperience" && <WorkExperience />}
-      { selectedContent === "dropTetris" && <DropTetris />}
+      { selectedContent === "contactInformation" && <ContactInformation fadeInClass={fadeInClass}/>}
+      { selectedContent === "hobbies" && <Hobbies fadeInClass={fadeInClass}/>}
+      { selectedContent === "selfSummary" && <SelfSummary fadeInClass={fadeInClass}/>}
+      { selectedContent === "workExperience" && <WorkExperience fadeInClass={fadeInClass}/>}
+      { selectedContent === "dropTetris" && <DropTetris fadeInClass={fadeInClass}/>}
     </div>
   )
 }
