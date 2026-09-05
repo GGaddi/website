@@ -11,7 +11,9 @@ function NameTag() {
       <div class="row">
         Gabriel Gaddi
       </div>
-      <img src={cardRotateMulti}  width="300"/>
+      <div class="row justify-content-center">
+        <img style={{width: "300px"}} src={cardRotateMulti} />
+      </div>
     </div>
   )
 }
