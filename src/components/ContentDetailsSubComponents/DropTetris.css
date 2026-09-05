@@ -13,3 +13,22 @@
         width: auto;
     }
 }
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.animate-content-fade-in {
+    animation: slideInFromRight 0.5s ease;
+    transform-origin: right center;
+    padding: 2rem;
+    background-color: rgba(150,150,150,0.2);
+    border-radius: 25px;
+}
