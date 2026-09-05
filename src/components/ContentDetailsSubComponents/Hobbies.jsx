@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import './Hobbies.css';
 
-function Hobbies() {
+function Hobbies({fadeInClass}) {
   const [count, setCount] = useState(0)
 
   return (
-    <div class="container">
+    <div
+      class="container"
+      className={fadeInClass}
+    >
       <div class="row">
           <div class="col-lg-12 text-left">
             <h1>Hobbies</h1>

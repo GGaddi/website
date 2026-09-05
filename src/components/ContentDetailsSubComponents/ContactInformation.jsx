@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Resume from '../../assets/Gabriel Gaddi Software Engineer Resume.pdf';
 import './ContactInformation.css';
 
-function ContactInformation() {
+function ContactInformation({fadeInClass}) {
   const [count, setCount] = useState(0)
-
   return (
-    <div class="container">
+    <div
+      class="container"
+      className={fadeInClass}
+    >
       <div class="row">
           <div class="col-lg-12 text-left">
             <h1>Contact and Socials</h1>
