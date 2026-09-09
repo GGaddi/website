@@ -17,6 +17,7 @@ function TableOfContents({selectContent}) {
   const projectsRef = useRef(null);
   const dropTetrisRef = useRef(null);
   const contactsRef = useRef(null);
+  const creditsRef = useRef(null);
 
   useEffect(() => {
     audioTraverseRef.current = new Audio(HoverSound);
@@ -147,6 +148,17 @@ function TableOfContents({selectContent}) {
               onClick={() => selectingContent('contactInformation')}
             >
               CONTACT AND SOCIALS
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn table-btn"
+              ref={creditsRef}
+              onMouseEnter={(e) => handleMouseEnter(creditsRef, e)}
+              onFocus={playHoverSound}
+              onClick={() => selectingContent('credits')}
+            >
+              CREDITS
             </button>
           </li>
         </ul>
