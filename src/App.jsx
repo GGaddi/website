@@ -3,6 +3,7 @@ import './App.css';
 import NameTag from './components/NameTag.jsx';
 import TableOfContents from './components/TableOfContents.jsx';
 import ContentDetails from './components/ContentDetails.jsx';
+import Audio from './components/Audio.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div class="container-fluid background min-vh-100">
+      <Audio />
       <div class="row fullRow align-items-start">
         <div class="col-md-3">
           <NameTag

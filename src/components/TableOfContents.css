@@ -15,7 +15,7 @@
 #submenu1 {
     
 }
-.btn {
+.table-btn {
   position: relative;
   border: none;
   z-index: 1;
@@ -24,12 +24,12 @@
 }
 
 @media (max-width: 900px) {
-    .btn {
+    .table-btn {
         padding-right:10px;
     }
 }
 
-.btn::before {
+.table-btn::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -39,5 +39,5 @@
   transform-origin: left center;
   transition: transform 0.4s ease;
 }
-.btn:is(:hover, :focus) { color: #fff; }
-.btn:is(:hover, :focus)::before { transform: scaleX(1); }
+.table-btn:is(:hover, :focus) { color: #fff; }
+.table-btn:is(:hover, :focus)::before { transform: scaleX(1); }
