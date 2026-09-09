@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Audio.css';
 import Waltz from "../assets/Aya+Higuchi+-+Waltz+in+A+minor,+B.+150.mp3";
 import MusicNote from "../assets/musicNote.png";
@@ -8,6 +8,17 @@ function Audio() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    return () => {
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    };
+  }, []);
 
   const togglePlay = () => {
     if (isPlaying) {
@@ -23,7 +34,6 @@ function Audio() {
     setVolume(newVolume);
 
     if (audioRef.current) {
-      // Scale 0-100 down to 0.0-1.0 for the HTML Audio API
       audioRef.current.volume = newVolume / 100;
     }
   };

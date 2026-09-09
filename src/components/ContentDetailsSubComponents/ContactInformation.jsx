@@ -6,7 +6,6 @@ function ContactInformation({fadeInClass}) {
   const [count, setCount] = useState(0)
   return (
     <div
-      class="container"
       className={fadeInClass}
     >
       <div class="row">
