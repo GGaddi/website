@@ -20,6 +20,7 @@
   border: none;
   z-index: 1;
   overflow: hidden;
+  text-align: left;
   padding-right: 150px;
 }
 
