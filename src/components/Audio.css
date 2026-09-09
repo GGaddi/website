@@ -1,3 +1,8 @@
+#volume-slider {
+    width: 100px;
+    padding: 10px;
+    margin-right: 1rem;
+}
 .toggle-btn {
     width: 80px;
 }
