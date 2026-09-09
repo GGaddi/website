@@ -7,7 +7,6 @@ function DropTetris({fadeInClass}) {
 
   return (
     <div
-      class="container"
       className={fadeInClass}
     >
       <div class="row">
