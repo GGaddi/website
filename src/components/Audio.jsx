@@ -7,6 +7,7 @@ import MusicNoteMute  from "../assets/musicNoteMute.png";
 function Audio() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volume, setVolume] = useState(50);
 
   const togglePlay = () => {
     if (isPlaying) {
@@ -17,12 +18,30 @@ function Audio() {
     setIsPlaying(!isPlaying);
   };
 
+  const handleVolumeChange = (e) => {
+    const newVolume = Number(e.target.value);
+    setVolume(newVolume);
+
+    if (audioRef.current) {
+      // Scale 0-100 down to 0.0-1.0 for the HTML Audio API
+      audioRef.current.volume = newVolume / 100;
+    }
+  };
+
   return (
     <div class="row justify-content-end">
         <audio ref={audioRef} src={Waltz} loop />
         <button class="btn toggle-btn" onClick={togglePlay}>
           {isPlaying ? <img src={MusicNote} width="50" height="50" /> : <img src={MusicNoteMute} width="50" height="50" />}
         </button>
+        <input
+          id="volume-slider"
+          type="range"
+          min="0"
+          max="100"
+          value={volume}
+          onChange={handleVolumeChange}
+        />
     </div>
   )
 }
