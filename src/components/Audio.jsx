@@ -10,13 +10,22 @@ function Audio() {
   const [volume, setVolume] = useState(50);
 
   useEffect(() => {
-    const audio = audioRef.current;
+    const stopAudio = () => {
+      setIsPlaying(false);
+      audioRef.current?.pause();
+    }
+
+    const handleVisibilityChange = () => {
+      setIsPlaying(false);
+      if (document.hidden) stopAudio();
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('pagehide', stopAudio);
 
     return () => {
-      if (audio) {
-        audio.pause();
-        audio.currentTime = 0;
-      }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pagehide', stopAudio);
     };
   }, []);
 
