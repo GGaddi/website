@@ -19,7 +19,7 @@ function SelfSummary({fadeInClass}) {
               Alongside the front-end modernization, the team and I utilized different API's. One example is  Sequelize, which was utilized in order to update the MySQL database structure as new requirements and features were requested while maintaining the existing customer data.
             </p>
             <h2>Employment at snapIoT/Covance/Fortrea</h2>
-            <p>My next 6+ years of employment, I worked under the startup snapIoT, which was later acquired by Labcorp Drug Developmenat team, Covance. Our sector was then later spinned off onto what it is now known as Fortrea.
+            <p>My next 6+ years of employment, I worked under the startup snapIoT, which was later acquired by Labcorp Drug Development team, Covance. Our sector was then later spinned off onto what it is now known as Fortrea.
               When starting at snapIoT, I utilized my React knowledge to quickly pick up Angular to continue building onto the management application of snapIoT, which was managing clinical trial applications. This involved inviting users, inviting patients, running clinical trials, storing and sorting the data for later exporting and storage.
               I also learned flowable and groovy script language in order to create one of their most important features, the ePRO application, which was used to run the clinical trial questionnaires for multiple clients. The functionality included timed reminders, questionnaire release times and expiration times, and questionnaire schedule generation for the patients.
               This application was continued to be used, upgraded, and modified throughout my entire employment under snapIoT all the way to Fortrea.
